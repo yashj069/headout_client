@@ -1,8 +1,14 @@
 "use client";
+import dynamic from "next/dynamic";
 import React from "react";
-import Playground from "@/components/Playground";
-// import "./page.module.css";
+const Playground = dynamic(() => import("@/components/Playground"), {
+  ssr: false,
+});
 
 export default function Home() {
-  return <Playground />;
+  return (
+    <div>
+      <Playground />
+    </div>
+  );
 }

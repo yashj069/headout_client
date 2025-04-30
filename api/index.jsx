@@ -1,4 +1,4 @@
-const BASE_URL = "https://headout-server-1.onrender.com/api";
+const BASE_URL = process.env.NEXT_PUBLIC_API_URL;
 
 export const fetchQuestion = async () => {
   const res = await fetch(`${BASE_URL}/game/question`);

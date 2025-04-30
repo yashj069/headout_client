@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function UsernameForm({ onSubmit }) {
+export default function UsernameForm({ onSubmit, error }) {
   const [name, setName] = useState("");
 
   const handleSubmit = (e) => {
@@ -11,6 +11,7 @@ export default function UsernameForm({ onSubmit }) {
   return (
     <div className="username-form">
       <h2>Enter a Unique Username</h2>
+
       <form onSubmit={handleSubmit}>
         <input
           type="text"
@@ -20,6 +21,7 @@ export default function UsernameForm({ onSubmit }) {
         />
         <button type="submit">Start Game</button>
       </form>
+      {error && <p className="error">{error}</p>}
     </div>
   );
 }
