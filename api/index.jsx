@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:4000/api";
+const BASE_URL = "https://headout-server-1.onrender.com/api";
 
 export const fetchQuestion = async () => {
   const res = await fetch(`${BASE_URL}/game/question`);
