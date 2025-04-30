@@ -1,4 +1,4 @@
-:root {
+/* /* :root {
   --background: #ffffff;
   --foreground: #171717;
 }
@@ -39,4 +39,102 @@ a {
   html {
     color-scheme: dark;
   }
+} */
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #e0f7fa, #80deea);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.app {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  color: #00796b;
+  margin-bottom: 1rem;
+}
+
+.card,
+.result {
+  background: #fafafa;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+.options button {
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #00acc1;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.options button:hover {
+  background-color: #00838f;
+}
+
+.scoreboard {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: #004d40;
+}
+
+button {
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.result-btns {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.play-again-btn {
+  background-color: #6e926e;
+  color: white;
+  border: none;
+  padding: 11px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  margin-top: 20px;
+  cursor: pointer;
+  margin-left: -10px;
+}
+
+.play-again-btn:hover {
+  background-color: #84b687;
+}
+
+.next-btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 12px 40px;
+  font-size: 16px;
+  border-radius: 8px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.next-btn:hover {
+  background-color: #45a049;
 }
